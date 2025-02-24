@@ -42,7 +42,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 
 // parseTemplates loads all .gohtml files in the "templates" directory
 func parseTemplates() *template.Template {
-    pattern := filepath.Join("templates", "**", "*.gohtml")
+    pattern := filepath.Join("templates", "**", "*.tmpl")
     t, err := template.ParseGlob(pattern)
     if err != nil {
         log.Fatalf("Error parsing templates: %v", err)
