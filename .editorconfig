@@ -2,3 +2,7 @@
 root = true
 indent_style = tab
 indent_size = 8
+
+[*.{tmpl,html}]
+indent_style = space
+indent_size = 4
