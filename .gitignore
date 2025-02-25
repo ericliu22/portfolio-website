@@ -2,5 +2,5 @@
 .DS_Store
 *.pem
 
-nodemodules
+node_modules
 .env*
